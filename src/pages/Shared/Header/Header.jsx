@@ -1,10 +1,11 @@
 import moment from "moment/moment";
 import Marquee from "react-fast-marquee";
 import logo from "../../../assets/logo.png";
-import { Button, Container, Nav, Navbar } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap"
+
 const Header = () => {
   return (
-    <Container>
+    <Container className="mt-4">
       <div className="text-center">
         <img src={logo} alt="Logo" />
         <p className="text-secondary">
@@ -19,24 +20,6 @@ const Header = () => {
           Highlights: Germany vs Spain as...
         </Marquee>
       </div>
-      <Navbar collapseOnSelect expand="lg">
-        <Container>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mx-auto">
-              <Nav.Link href="#features">Home</Nav.Link>
-              <Nav.Link href="#pricing">About</Nav.Link>
-              <Nav.Link href="#career">Career</Nav.Link>
-            </Nav>
-            <Nav className="d-flex align-items-center">
-              <Nav.Link href="#deets">Profile</Nav.Link>
-              <Nav.Link href="#memes">
-                <Button variant="secondary">Login</Button>
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
     </Container>
   );
 };

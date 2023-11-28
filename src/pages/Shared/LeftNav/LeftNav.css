@@ -1,0 +1,15 @@
+.hover-link {
+    transition: all 0.2s ease-out;
+}
+.hover-link:hover {
+    background-color: #E7E7E7;
+}
+
+.link-color {
+    color: #9F9F9F;
+    transition: all 0.3.s ease-in;
+}
+
+.link-color:hover {
+    color: #403F3F;
+}
